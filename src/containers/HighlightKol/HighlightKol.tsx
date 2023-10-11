@@ -83,10 +83,7 @@ const HighlightKol: React.FC<THighlightKolProps> = () => {
                 </Row>
               </div>
               <p className="HighlightKol-info-description">
-                I'm Cathay, content creator and influencer with a passion for exploring and sharing unique life
-                experiences. My focus revolves around showcasing culture, travel, food, and lifestyle through my lens.
-                With a proven track record of creating engaging content and connecting naturally with my audience, I'm
-                excited to collaborate with you. I believe my creativity can ignite interest in your brand or product...
+                Ich bin ❤️ Cathay ❤️ aus Italy und liebe es, Spaß zu haben. Mit meinem sexy Körper und meinen schönen Augen kann ich dir die Zeit deines Lebens geben. Ich bin voller Leidenschaft und sehr ungezogen, ich bin sicher, du wirst mehr wollen und mehr. Wenn Sie einen ganzen Abend oder eine ganze Nacht mit mir verbringen möchten, kann ich meinen Stundensatz auslaufen lassen und Sie können mir ein gutes Angebot unterbreiten. Also Herr, worauf warten Sie? Rufen Sie mich einfach an, um einen Termin zu vereinbaren, Sie verdienen das Beste.
               </p>
               <div className="HighlightKol-info-link flex justify-end">
                 <Button

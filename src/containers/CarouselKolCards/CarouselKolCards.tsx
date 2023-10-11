@@ -13,7 +13,7 @@ const CarouselKolCards: React.FC<TCarouselKolCardsProps> = () => {
 
   return (
     <div className="CarouselKolCards">
-      <h2 className="CarouselKolCards-title">Top influencers/KOLs</h2>
+      <h2 className="CarouselKolCards-title">Bei <span style={{ color: '#FF1B6D' }}>6F</span>uxxx.com werden Träume wahr...</h2>
 
       <div className="CarouselKolCards-main">
         <Carousels

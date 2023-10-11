@@ -3,63 +3,51 @@ import { TMultipleCheckboxCollapseData } from '@/components/MultipleCheckboxColl
 export const dataFilterCategoryOptions = [
   {
     key: '1',
-    title: 'Parent 1',
+    title: 'Angebotene Services',
     children: [
       {
         key: '1.1',
-        title: 'Option 1.1',
+        title: 'Softcore',
         children: [
           {
             key: '1.1.1',
-            title: 'Item 1.1.1',
+            title: 'Foto-Aufnahmen',
           },
           {
             key: '1.1.2',
-            title: 'Item 1.1.2',
+            title: 'Striptease',
           },
           {
             key: '1.1.3',
-            title: 'Item 1.1.3',
-          },
-          {
-            key: '1.1.4',
-            title: 'Item 1.1.4',
-          },
+            title: 'Kuscheln',
+          }
         ],
       },
       {
         key: '1.2',
-        title: 'Option 1.2',
+        title: 'Hardcore',
         children: [
           {
             key: '1.2.1',
-            title: 'Item 1.2.1',
+            title: 'Foto-Aufnahmen',
           },
           {
             key: '1.2.2',
-            title: 'Item 1.2.2',
+            title: 'Striptease',
+          },
+          {
+            key: '1.2.3',
+            title: 'Dirty Talk',
           },
         ],
       },
       {
         key: '1.3',
-        title: 'Option 1.3',
+        title: 'Escort-Services',
         children: [
           {
             key: '1.3.1',
-            title: 'Item 1.3.1',
-          },
-          {
-            key: '1.3.2',
-            title: 'Item 1.3.2',
-          },
-          {
-            key: '1.3.3',
-            title: 'Item 1.3.3',
-          },
-          {
-            key: '1.3.4',
-            title: 'Item 1.3.4',
+            title: 'Foto-Aufnahmen',
           },
         ],
       },
@@ -67,7 +55,7 @@ export const dataFilterCategoryOptions = [
   },
   {
     key: '2',
-    title: 'Parent 2',
+    title: 'Herkunft',
     children: [
       {
         key: '2.1',
@@ -131,7 +119,7 @@ export const dataFilterCategoryOptions = [
   },
   {
     key: '3',
-    title: 'Parent 3',
+    title: 'Sprache',
     children: [
       {
         key: '3.1',
@@ -195,7 +183,7 @@ export const dataFilterCategoryOptions = [
   },
   {
     key: '4',
-    title: 'Parent 4',
+    title: 'Sexualität',
     children: [
       {
         key: '4.1',

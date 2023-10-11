@@ -12,8 +12,8 @@ export default {
     role: 'Role',
   },
   footer: {
-    description: 'Join millions of people who organize work and life with Logoxxx',
-    copyright: 'Copyright © 202X by Logoxxx',
+    description: 'Join millions of people who organize work and life with 6Fuxxx',
+    copyright: 'Copyright © 202X by 6Fuxxx',
     becomeAnInfluencer: 'Become an Influencer',
     faq: 'FAQ',
     support: 'Support',
