@@ -8,12 +8,13 @@ import { Paths } from '@/routers/constants';
 import { TCarouselKolCardsProps } from './CarouselKolCards.types.d';
 import { dataCarouselKolCards } from './CarouselKolCards.data';
 
-const CarouselKolCards: React.FC<TCarouselKolCardsProps> = () => {
+
+const CarouselKolCards: React.FC<TCarouselKolCardsProps> = ({title}) => {
   const router = useRouter();
 
   return (
     <div className="CarouselKolCards">
-      <h2 className="CarouselKolCards-title">Bei <span style={{ color: '#FF1B6D' }}>6F</span>uxxx.com werden Träume wahr...</h2>
+      <h2 className="CarouselKolCards-title">{title}</h2>
 
       <div className="CarouselKolCards-main">
         <Carousels

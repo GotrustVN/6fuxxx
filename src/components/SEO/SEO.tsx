@@ -9,9 +9,9 @@ const SEO: React.FC<TSEOProps> = ({ title, description, image, keywords, url, fa
   const data = {
     favicon: `${env.rootUrl}/static/images/favicon.svg`,
     image: `${env.rootUrl}/static/images/logo.svg`,
-    title: 'KOLv2',
-    description: '',
-    keywords: '',
+    title: '6Fuxxx',
+    description: 'Where dreams come true!',
+    keywords: 'escort girls',
     url: env.rootUrl,
   };
 

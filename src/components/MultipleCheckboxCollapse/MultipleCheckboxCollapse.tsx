@@ -74,6 +74,9 @@ const MultipleCheckboxCollapse: React.FC<TMultipleCheckboxCollapseProps> = ({ va
               header={
                 <div className="MultipleCheckboxCollapse-item-header flex items-center">
                   <div className="MultipleCheckboxCollapse-item-header-title">{parent.title}</div>
+                  <div>
+                    <p style={{ color: 'gray' }}>({parent.count})</p>
+                  </div>
                   <div className="MultipleCheckboxCollapse-item-checkbox" onClick={(e): void => e.stopPropagation()}>
                     <Checkbox
                       value={isCheckedParent}
@@ -99,6 +102,9 @@ const MultipleCheckboxCollapse: React.FC<TMultipleCheckboxCollapseProps> = ({ va
                       <div key={option.key} className="MultipleCheckboxCollapse-item-body-group">
                         <div className="MultipleCheckboxCollapse-item-body-option flex items-center">
                           <div className="MultipleCheckboxCollapse-item-body-option-title bold">{option.title}</div>
+                          <div>
+                            <p style={{ color: 'gray' }}>({option.count})</p>
+                          </div>
                           <div
                             className="MultipleCheckboxCollapse-item-checkbox"
                             onClick={(e): void => e.stopPropagation()}

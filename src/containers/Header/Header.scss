@@ -1,7 +1,7 @@
 @import '@/assets/styles/_global.scss';
 
 .Header {
-  padding: 4.8rem 0;
+  padding: 2.4rem 0;
   transition: $common-transition;
 
   &.small {
@@ -12,8 +12,8 @@
     padding: 1.2rem;
     margin: 0 -1.2rem;
     border-radius: 1.2rem;
-    background: linear-gradient(270deg, #354058 -429.6%, rgba(99, 127, 151, 0.00) 100%);
-    backdrop-filter: blur(1.2rem);
+    background: linear-gradient(270deg, #040608 -429.6%, rgba(11, 23, 33, 0) 100%);
+    backdrop-filter: blur(1.0rem);
   }
 
   &-logo {

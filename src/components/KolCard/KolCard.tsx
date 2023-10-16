@@ -7,6 +7,7 @@ import Icon, { EIconColor, EIconName } from '@/components/Icon';
 import Button, { EButtonStyleType } from '@/components/Button';
 
 import { TKolCardProps } from './KolCard.types.d';
+import Video from '@/components/Video';
 
 const KolCard: React.FC<TKolCardProps> = ({
   loading,
@@ -22,6 +23,7 @@ const KolCard: React.FC<TKolCardProps> = ({
   promotion,
   horizontal,
   description,
+  video,
   online,
   onClick,
 }) => {
@@ -34,9 +36,9 @@ const KolCard: React.FC<TKolCardProps> = ({
       ) : (
         <>
           {topPick && (
-            <div className="KolCard-badge flex items-center justify-center">
-              <Icon name={EIconName.ThumbUp} color={EIconColor.WHITE} />
-              Top Picks
+            <div className="KolCard-badge promotion flex items-center justify-center">
+              {/* <Icon name={EIconName.ThumbUp} color={EIconColor.WHITE} /> */}
+              🔥 Hot Pick
             </div>
           )}
 
@@ -47,10 +49,15 @@ const KolCard: React.FC<TKolCardProps> = ({
             </div>
           )}
 
-          <div className="KolCard-image">{image && <Image src={image} alt="" />}</div>
-          <div className="KolCard-play">
-            <Icon name={EIconName.PlayCircle} />
+          <div className="KolCard-image">
+            {video && <Video src={video} thumbnail={image} placement={horizontal ? 'bottomRight' : 'topLeft'} />}
+            {!video && image && <Image src={image} alt="" />}
           </div>
+
+          {/* <div className="KolCard-play">
+            <Icon name={EIconName.PlayCircle} />
+          </div> */}
+
           <div className="KolCard-info flex flex-col justify-end">
             {!horizontal && (
               <>
@@ -62,11 +69,10 @@ const KolCard: React.FC<TKolCardProps> = ({
             <div className="KolCard-info-wrapper">
               <div className={classNames('KolCard-name flex items-center', { online })}>
                 <span>{name}</span>
-                <div className="KolCard-rank">{rank && <Image src={rank} alt="" />}</div>
               </div>
 
               <div className="KolCard-age flex items-center">
-                {age}. Tokyo, Japan
+                {age}. Volketswil
                 <div className="KolCard-country">{country && <Image src={country} alt="" />}</div>
               </div>
 
@@ -82,16 +88,25 @@ const KolCard: React.FC<TKolCardProps> = ({
                 </div>
               </div>
 
-              {horizontal && description && (
+              {!horizontal && (
+                <div className="KolCard-verify flex items-center">
+                  {rank && <Image src={rank} alt="" />}
+                  Verified profile
+                </div>
+              )}
+
+              {horizontal && (
                 <p className="KolCard-description" style={{ margin: '2.4rem 0' }}>
-                  {description}
+                  Im Cathay, content creator and influencer with a passion for exploring and sharing unique life
+                  experiences. My focus revolves around showcasing culture, travel, food, and lifestyle through my
+                  lens...
                 </p>
               )}
 
               {horizontal && (
                 <div className="KolCard-btn flex">
                   <Button
-                    title="View portfolio"
+                    title="View Detail"
                     reverse
                     iconName={EIconName.ArrowRightShort}
                     iconColor={EIconColor.RADICAL_RED}
@@ -100,6 +115,11 @@ const KolCard: React.FC<TKolCardProps> = ({
                 </div>
               )}
             </div>
+          </div>
+
+          <div className="KolCard-verify light flex items-center" style={{ fontSize: '16px' }}>
+            {rank && <Image src={rank} alt="" />}
+            Verified profile
           </div>
         </>
       )}

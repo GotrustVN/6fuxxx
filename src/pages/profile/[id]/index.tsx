@@ -37,7 +37,7 @@ const ProfileDetail = () => {
             </Col>
           </Row>
         </div>
-        <CarouselKolCards />
+        <CarouselKolCards title={'Your last viewed girls'} />
       </div>
     </div>
   );

@@ -14,7 +14,7 @@ const Home = () => {
     <div className="Home">
       <div className="container">
         <div className="Home-wrapper">
-          <CarouselKolCards />
+          <CarouselKolCards title={'At 6Fuxxx.com, Your dreams come true...'} />
           <HighlightKol />
           <FindKol />
         </div>

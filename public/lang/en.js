@@ -7,7 +7,7 @@ export default {
     username: 'Username',
     password: 'Password',
     login: 'Login',
-    signup: 'Signup',
+    signup: 'Register',
     profile: 'Profile',
     role: 'Role',
   },

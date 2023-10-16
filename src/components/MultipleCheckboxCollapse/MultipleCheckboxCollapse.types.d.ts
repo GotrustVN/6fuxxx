@@ -6,5 +6,6 @@ export type TMultipleCheckboxCollapseProps = {
 export type TMultipleCheckboxCollapseData = {
   key: string;
   title?: string;
+  count?: number,
   children?: TMultipleCheckboxCollapseData[];
 };

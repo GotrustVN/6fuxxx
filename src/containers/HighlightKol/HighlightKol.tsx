@@ -7,9 +7,9 @@ import ImageHighLightLineTop from '@/assets/images/image-highlight-line-top.png'
 import ImageHighLightLineBottom from '@/assets/images/image-highlight-line-bottom.png';
 import IconRankV from '@/assets/icons/icon-rank-v.svg';
 import IconFlagJp from '@/assets/icons/icon-flag-jp.svg';
-import ImageModel3 from '@/assets/images/image-model-3.png';
-import ImageModel8 from '@/assets/images/image-model-8.png';
-import ImageModel10 from '@/assets/images/image-model-10.png';
+import ImageModel3 from '@/assets/images/image-model-10.png';
+import ImageModel8 from '@/assets/images/image-model-11.png';
+import ImageModel10 from '@/assets/images/image-model-12.png';
 import Button, { EButtonStyleType } from '@/components/Button';
 import Icon, { EIconColor, EIconName } from '@/components/Icon';
 
@@ -51,7 +51,7 @@ const HighlightKol: React.FC<THighlightKolProps> = () => {
                 <Row gutter={[24, 24]}>
                   <Col>
                     <div className="HighlightKol-info-detail-item flex items-center">
-                      26. Tokyo, Japan
+                      26. Volketswil
                       <div className="HighlightKol-info-detail-item-icon">
                         <Image src={IconFlagJp} alt="" />
                       </div>
@@ -99,7 +99,7 @@ const HighlightKol: React.FC<THighlightKolProps> = () => {
         </Row>
         <div className="HighlightKol-sponsored flex items-center">
           <Icon name={EIconName.Lightning} color={EIconColor.LYNCH} />
-          Sponsored by XXXX
+          Girl of the day
         </div>
       </div>
     </div>

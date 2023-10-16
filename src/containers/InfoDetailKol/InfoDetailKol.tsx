@@ -16,6 +16,7 @@ const InfoDetailKol: React.FC<TInfoDetailKolProps> = () => {
             Valentina
             <div className="InfoDetailKol-rank">
               <Image src={IconRankV} alt="" />
+              <span>Verified profile</span>
             </div>
           </div>
           <div className="InfoDetailKol-description flex items-center" style={{ marginBottom: '1rem' }}>
@@ -65,11 +66,6 @@ const InfoDetailKol: React.FC<TInfoDetailKolProps> = () => {
           <div className="InfoDetailKol-body-item flex items-center">
             <Icon name={EIconName.Bubbles} color={EIconColor.HEATHER} />
             <strong>Communication:</strong> Phone, SMS, WhatsApp, VK
-          </div>
-
-          <div className="InfoDetailKol-body-item flex items-center">
-            <Icon name={EIconName.Mail} color={EIconColor.HEATHER} />
-            <strong>Email:</strong> valentina21131@gmail.com
           </div>
 
           <div className="InfoDetailKol-body-item flex items-center">

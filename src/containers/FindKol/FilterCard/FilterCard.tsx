@@ -10,10 +10,10 @@ import Button, { EButtonStyleType } from '@/components/Button';
 import KolCard from '@/components/KolCard';
 import AdBlock from '@/components/AdBlock';
 import { Paths } from '@/routers/constants';
+import { getArrayFrom0To } from '@/utils/functions';
 
 import { ETypeLayout } from './FilterCard.enums';
 import { TFilterCardProps } from './FilterCard.types';
-import { getArrayFrom0To } from '@/utils/functions';
 
 const MediaQuery = dynamic(() => import('react-responsive'), {
   ssr: false,
@@ -40,7 +40,7 @@ const FilterCard: React.FC<TFilterCardProps> = ({ data = [], loading, onOpenFilt
             </MediaQuery>
             <Col flex={1} style={{ marginRight: '1.2rem' }}>
               <Input
-                placeholder="Search by name..."
+                placeholder="Search..."
                 prefix={<Icon name={EIconName.Search} color={EIconColor.PALE_SKY} />}
               />
             </Col>
@@ -68,7 +68,7 @@ const FilterCard: React.FC<TFilterCardProps> = ({ data = [], loading, onOpenFilt
                 iconName={EIconName.Wifi}
                 iconColor={EIconColor.SCREAMIN_GREEN}
                 styleType={EButtonStyleType.TRANSPARENT}
-                title="45 online now"
+                title="45 online"
               />
             </Col>
           </Row>
@@ -102,7 +102,7 @@ const FilterCard: React.FC<TFilterCardProps> = ({ data = [], loading, onOpenFilt
 
                 {loading && (
                   <>
-                    {getArrayFrom0To(4).map((item) => (
+                    {getArrayFrom0To(8).map((item) => (
                       <Col key={item} span={12} sm={{ span: 8 }} md={{ span: 6 }}>
                         <div className="FilterCard-grid-item">
                           <KolCard loading />
@@ -121,7 +121,13 @@ const FilterCard: React.FC<TFilterCardProps> = ({ data = [], loading, onOpenFilt
                 {data
                   .filter((item: any) => !item.ad)
                   .map((item: any) => {
-                    return (
+                    const isAd = item.ad;
+
+                    return isAd ? (
+                      <Col key={item.id} span={24} md={{ span: 12 }}>
+                        <AdBlock />
+                      </Col>
+                    ) : (
                       <Col key={item.id} span={24} md={{ span: 12 }}>
                         <div className="FilterCard-list-item">
                           <KolCard
@@ -138,7 +144,7 @@ const FilterCard: React.FC<TFilterCardProps> = ({ data = [], loading, onOpenFilt
 
                 {loading && (
                   <>
-                    {getArrayFrom0To(4).map((item) => (
+                    {getArrayFrom0To(8).map((item) => (
                       <Col key={item} span={24} md={{ span: 12 }}>
                         <div className="FilterCard-list-item">
                           <KolCard horizontal loading />

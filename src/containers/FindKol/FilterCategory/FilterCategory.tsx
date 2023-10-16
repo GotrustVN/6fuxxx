@@ -21,15 +21,12 @@ const FilterCategory: React.FC<TFilterCategoryProps> = ({ onFilter }) => {
   const handleSelectAll = (): void => {
     if (isSelectAll) {
       setFilterState([]);
+      onFilter?.();
     } else {
       setFilterState(allOptionsFilter);
+      onFilter?.();
     }
   };
-
-  useEffect(() => {
-    onFilter?.();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [filterState]);
 
   return (
     <div className="FilterCategory">
@@ -39,7 +36,7 @@ const FilterCategory: React.FC<TFilterCategoryProps> = ({ onFilter }) => {
             <Icon name={EIconName.Filter} color={EIconColor.FIORD} />
           </div>
           <div className="FilterCategory-header-title">
-            Filter <span style={{ color: EIconColor.SCREAMIN_GREEN }}>(4,635)</span>
+            Filter <span style={{ color: EIconColor.SCREAMIN_GREEN }}>(535)</span>
           </div>
           {!isSelectAll ? (
             <div className={classNames('FilterCategory-header-all flex items-center nowrap')} onClick={handleSelectAll}>
@@ -59,9 +56,10 @@ const FilterCategory: React.FC<TFilterCategoryProps> = ({ onFilter }) => {
               <Select
                 placeholder="Select location"
                 options={[
-                  { label: 'Location 1', value: '1' },
-                  { label: 'Location 2', value: '2' },
-                  { label: 'Location 3', value: '3' },
+                  { label: '8600 Bruck an de Mur', value: '1' },
+                  { label: '8605 Kapfenberg', value: '2' },
+                  { label: '8608 Bubikon', value: '3' },
+                  { label: '8608 Âthal-Seegraben', value: '4' },
                 ]}
                 onChange={onFilter}
               />
@@ -70,15 +68,25 @@ const FilterCategory: React.FC<TFilterCategoryProps> = ({ onFilter }) => {
               <Select
                 placeholder="Select range"
                 options={[
-                  { label: 'Range 1', value: '1' },
-                  { label: 'Range 2', value: '2' },
-                  { label: 'Range 3', value: '3' },
+                  { label: '5 km', value: '1' },
+                  { label: '10 km', value: '2' },
+                  { label: '20 km', value: '3' },
+                  { label: '30 km', value: '4' },
+                  { label: '50 km', value: '5' },
+                  { label: '100 km', value: '6' },
+                  { label: '>100 km', value: '7' }
                 ]}
                 onChange={onFilter}
               />
             </Col>
             <Col span={24}>
-              <MultipleCheckboxCollapse value={filterState} onChange={setFilterState} />
+              <MultipleCheckboxCollapse
+                value={filterState}
+                onChange={(data): void => {
+                  setFilterState(data);
+                  onFilter?.();
+                }}
+              />
             </Col>
           </Row>
         </div>
