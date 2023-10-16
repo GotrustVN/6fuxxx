@@ -10,31 +10,26 @@ export const dataFilterCategoryOptions = [
         key: '1.1',
         title: 'French Kissing',
         count: 512,
-        children: null,
       },
       {
         key: '1.2',
         title: 'Video',
         count: 212,
-        children: null,
       },
       {
         key: '1.3',
         title: 'Photo',
         count: 221,
-        children: null,
       },
       {
         key: '1.4',
         title: 'Dirty Talk',
         count: 400,
-        children: null,
       },
       {
         key: '1.5',
         title: 'Erotic Massage',
         count: 120,
-        children: null,
       },
       {
         key: '1.5',
@@ -116,31 +111,26 @@ export const dataFilterCategoryOptions = [
         key: '3.1',
         title: 'German',
         count: 322,
-        children: null,
       },
       {
         key: '3.2',
         title: 'English',
         count: 81,
-        children: null,
       },
       {
         key: '3.3',
         title: 'Spanish',
         count: 19,
-        children: null,
       },
       {
         key: '3.4',
         title: 'Italian',
         count: 19,
-        children: null,
       },
       {
         key: '3.5',
         title: 'French',
         count: 201,
-        children: null,
       },
       {
         key: '3.6',
