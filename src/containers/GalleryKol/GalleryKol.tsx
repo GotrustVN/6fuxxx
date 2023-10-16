@@ -8,6 +8,7 @@ import ImageKolGallery1 from '@/assets/images/image-kol-gallery-1.png';
 import ImageKolGallery2 from '@/assets/images/image-kol-gallery-2.png';
 import ImageKolGallery3 from '@/assets/images/image-kol-gallery-3.png';
 import ImageKolGallery4 from '@/assets/images/image-kol-gallery-4.png';
+import ImageKolGallerytn from '@/assets/images/image-kol-gallery-tn.png';
 import Carousels from '@/components/Carousels';
 import Button, { EButtonStyleType } from '@/components/Button';
 import { EIconColor, EIconName } from '@/components/Icon';
@@ -30,7 +31,7 @@ const GalleryKol: React.FC<TGalleryKolProps> = ({ view }) => {
   const [viewGalleryModalState, handleOpenViewGalleryModal, handleCloseViewGalleryModal] = useModalState();
   const dataCarousel = [
     { image: ImageKolGallery1 },
-    { image: null, video: '/static/videos/video-sample.mp4' },
+    { image: ImageKolGallerytn, video: '/static/videos/video-sample.mp4' },
     { image: ImageKolGallery2 },
     { image: ImageKolGallery3 },
     { image: ImageKolGallery4 },
