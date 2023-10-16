@@ -28,7 +28,7 @@ import ImageModel25 from '@/assets/images/image-model-25.png';
 import ImageModel26 from '@/assets/images/image-model-26.png';
 import ImageModel27 from '@/assets/images/image-model-27.png';
 import ImageModel28 from '@/assets/images/image-model-28.png';
-import IconFlagJp from '@/assets/icons/icon-flag-jp.svg';
+import IconFlagJp from '@/assets/icons/icon-flag-it.svg';
 
 export const dataFindKolCards = [
   {
@@ -47,7 +47,7 @@ export const dataFindKolCards = [
   },
   {
     id: '2',
-    name: 'Catherine',
+    name: 'Giovanni',
     rank: IconRankV,
     image: ImageModel2,
     age: 27,
@@ -59,7 +59,7 @@ export const dataFindKolCards = [
   },
   {
     id: '3',
-    name: 'Catherine',
+    name: 'Sofia',
     rank: IconRankV,
     image: ImageModel3,
     age: 27,
@@ -71,7 +71,7 @@ export const dataFindKolCards = [
   },
   {
     id: '4',
-    name: 'Catherine',
+    name: 'Marco',
     rank: IconRankV,
     image: ImageModel4,
     age: 27,
@@ -83,7 +83,7 @@ export const dataFindKolCards = [
   },
   {
     id: '5',
-    name: 'Catherine',
+    name: 'Isabella',
     rank: IconRankV,
     image: ImageModel5,
     age: 27,
@@ -95,7 +95,7 @@ export const dataFindKolCards = [
   },
   {
     id: '6',
-    name: 'Catherine',
+    name: 'Luca',
     rank: IconRankV,
     image: ImageModel6,
     age: 27,
@@ -111,7 +111,7 @@ export const dataFindKolCards = [
   },
   {
     id: '7',
-    name: 'Catherine',
+    name: 'Valentina',
     rank: IconRankV,
     image: ImageModel7,
     age: 27,
@@ -123,7 +123,7 @@ export const dataFindKolCards = [
   },
   {
     id: '8',
-    name: 'Catherine',
+    name: 'Alessandro',
     rank: IconRankV,
     image: ImageModel8,
     age: 27,
@@ -135,7 +135,7 @@ export const dataFindKolCards = [
   },
   {
     id: '9',
-    name: 'Catherine',
+    name: 'Giulia',
     rank: IconRankV,
     image: ImageModel9,
     age: 27,
@@ -147,7 +147,7 @@ export const dataFindKolCards = [
   },
   {
     id: '10',
-    name: 'Catherine',
+    name: 'Matteo',
     rank: IconRankV,
     image: ImageModel10,
     age: 27,
@@ -159,7 +159,7 @@ export const dataFindKolCards = [
   },
   {
     id: '11',
-    name: 'Catherine',
+    name: 'Elena',
     rank: IconRankV,
     image: ImageModel11,
     age: 27,
