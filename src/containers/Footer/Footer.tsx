@@ -31,7 +31,6 @@ const Footer: React.FC<TFooterProps> = () => {
           <Row align="middle" justify="space-between" className="Footer-main">
             <Col>
               <div className="Footer-description" style={{ maxWidth: '48.5rem' }}>
-                <p >{trans?.footer?.description}</p>
                 - Terms & Conditions: <a href="https://example.com">Link</a>
                 <br></br>- Data Privacy: <a href="https://example.com">Link</a>
                 <br></br>- Imprint: <a href="https://example.com">Link</a>
