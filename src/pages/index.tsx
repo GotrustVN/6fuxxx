@@ -7,6 +7,12 @@ import HighlightKol from '@/containers/HighlightKol';
 import FindKol from '@/containers/FindKol';
 import { useRouter } from 'next/router';
 
+const coloredText = (
+  <p>
+    At <span style={{ color: '#FF1B6D' }}>6F</span>uxxx Your dreams come true...
+  </p>
+);
+
 const Home = () => {
   const router = useRouter();
 
@@ -14,12 +20,12 @@ const Home = () => {
     <div className="Home">
       <div className="container">
         <div className="Home-wrapper">
-          <CarouselKolCards title={'At 6Fuxxx.com, Your dreams come true...'} />
+          <CarouselKolCards title={coloredText} />
           <HighlightKol />
           <FindKol />
         </div>
       </div>
-    </div>
+    </div >
   );
 };
 

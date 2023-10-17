@@ -36,7 +36,7 @@ const FilterCategory: React.FC<TFilterCategoryProps> = ({ onFilter }) => {
             <Icon name={EIconName.Filter} color={EIconColor.FIORD} />
           </div>
           <div className="FilterCategory-header-title">
-            Filter <span style={{ color: EIconColor.SCREAMIN_GREEN }}>(535)</span>
+            Filter <span style={{ color: EIconColor.SCREAMIN_GREEN }}>(4,635)</span>
           </div>
           {!isSelectAll ? (
             <div className={classNames('FilterCategory-header-all flex items-center nowrap')} onClick={handleSelectAll}>
