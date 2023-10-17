@@ -7,11 +7,7 @@ import HighlightKol from '@/containers/HighlightKol';
 import FindKol from '@/containers/FindKol';
 import { useRouter } from 'next/router';
 
-const coloredText = (
-  <p>
-    At <span style={{ color: '#FF1B6D' }}>6F</span>uxxx Your dreams come true...
-  </p>
-);
+const coloredText: string = 'At <span style="color: #FF1B6D;">6F</span>uxxx Your dreams come true...';
 
 const Home = () => {
   const router = useRouter();

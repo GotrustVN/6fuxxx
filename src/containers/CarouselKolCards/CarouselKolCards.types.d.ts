@@ -1,5 +1,5 @@
 //export type TCarouselKolCardsProps = unknown;
-interface ICarouselKolCardsProps {
+interface TCarouselKolCardsProps {
     title: string;
 }
-export type TCarouselKolCardsProps = ICarouselKolCardsProps;
+export { TCarouselKolCardsProps };
