@@ -1,0 +1,25 @@
+.static-text-container {
+  margin: 0 auto !important;
+  line-height: 1.2;
+  border-radius: 2.4rem;
+  border: 1px solid rgba($white, 0.2);
+  background: $outer-space;
+  max-width: 1440px;
+  float: none !important;
+  white-space: normal;
+}
+
+.static-text {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #ffffff;
+  padding: 5rem;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  max-width: 100%;
+}
+
+.static-text-space {
+  margin-top: 5rem;
+}

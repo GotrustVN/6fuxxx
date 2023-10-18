@@ -31,10 +31,10 @@ const Footer: React.FC<TFooterProps> = () => {
           <Row align="middle" justify="space-between" className="Footer-main">
             <Col>
               <div className="Footer-description" style={{ maxWidth: '48.5rem' }}>
-                - Terms & Conditions: <a href="https://example.com">Link</a>
-                <br></br>- Data Privacy: <a href="https://example.com">Link</a>
-                <br></br>- Imprint: <a href="https://example.com">Link</a>
-                <br></br>- 18 USC 2257: <a href="https://example.com">Link</a>
+                - Terms & Conditions: <Link href="/static?filename=Terms-and-Conditions.txt">Link</Link>
+                <br></br>- Data Privacy: <Link href="/static?filename=data-privacy.txt">Link</Link>
+                <br></br>- Imprint: <Link href="/static?filename=imprint.txt">Link</Link>
+                <br></br>- 18 USC 2257: <Link href="/static?filename=18-USC-2257-Statement.txt">Link</Link>
               </div>
             </Col>
             <Col>
