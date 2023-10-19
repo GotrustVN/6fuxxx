@@ -43,6 +43,9 @@ const GuestLayout: React.FC<TSimpleLayoutProps> = ({ children }) => {
           }}
         />
       </div>
+      <div>
+        <div className="SimpleLayout-empty-space"/>
+      </div>
     </div>
   );
 };
