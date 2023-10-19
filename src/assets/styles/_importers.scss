@@ -31,6 +31,7 @@
 @import '@/components/Video/Video.scss';
 
 @import '@/containers/Header/Header.scss';
+@import '@/containers/SimpleHeader/SimpleHeader.scss';
 @import '@/containers/Footer/Footer.scss';
 @import '@/containers/CarouselKolCards/CarouselKolCards.scss';
 @import '@/containers/Header/DrawerMenuMobile/DrawerMenuMobile.scss';
@@ -49,6 +50,7 @@
 
 @import '@/layouts/AuthLayout/AuthLayout.scss';
 @import '@/layouts/GuestLayout/GuestLayout.scss';
+@import '@/layouts/SimpleLayout/SimpleLayout.scss';
 
 @import '@/pages/profile/[id]/ProfileDetail.scss';
 @import '@/pages/login/Login.scss';

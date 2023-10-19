@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import TextFileContent from '@/components/TextFileContent';
 
 import SEO from '@/components/SEO';
-import GuestLayout from '@/layouts/GuestLayout';
+import SimpleLayout from '@/layouts/SimpleLayout';
 
 const StaticContent = () => {
   const [filename, setFilename] = useState('');
@@ -33,7 +33,7 @@ StaticContent.getLayout = function (page: React.ReactNode) {
   return (
     <>
       <SEO />
-      <GuestLayout>{page}</GuestLayout>
+      <SimpleLayout>{page}</SimpleLayout>
     </>
   );
 };
