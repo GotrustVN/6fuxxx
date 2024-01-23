@@ -27,6 +27,7 @@ const GalleryKol: React.FC<TGalleryKolProps> = ({ view }) => {
 
   const [carouselRef, setCarouselRef] = useState<Slider>();
   const [currentIndexSlide, setCurrentIndexSlide] = useState<number>(0);
+  const [isDragging, setIsDragging] = useState<boolean>(false);
 
   const [viewGalleryModalState, handleOpenViewGalleryModal, handleCloseViewGalleryModal] = useModalState();
   const dataCarousel = [
@@ -60,12 +61,17 @@ const GalleryKol: React.FC<TGalleryKolProps> = ({ view }) => {
               slidesToShow={1}
               onInit={setCarouselRef}
               onBeforeChange={(oldIndex, newIndex): void => setCurrentIndexSlide(newIndex)}
+              onDragging={setIsDragging}
             >
               {dataCarousel.map((item, index) => (
                 <div
                   key={index}
                   className="GalleryKol-carousel-item"
-                  onClick={(): void => handleOpenViewGalleryModal(undefined, { defaultIndex: currentIndexSlide })}
+                  onClick={(): void => {
+                    if (!isDragging) {
+                      handleOpenViewGalleryModal(undefined, { defaultIndex: currentIndexSlide });
+                    }
+                  }}
                 >
                   {item.video ? (
                     <Video src={item.video} thumbnail={item.image} placement="center" objectFit="contain" disabled />
@@ -81,7 +87,7 @@ const GalleryKol: React.FC<TGalleryKolProps> = ({ view }) => {
                 iconColor={EIconColor.OSLO_GRAY}
                 styleType={EButtonStyleType.TRANSPARENT}
                 onClick={(): void => {
-                  carouselRef?.slickPrev?.();
+                  if (!isDragging) carouselRef?.slickPrev?.();
                 }}
               />
               <div className="GalleryKol-carousel-action-title">
@@ -92,7 +98,7 @@ const GalleryKol: React.FC<TGalleryKolProps> = ({ view }) => {
                 iconColor={EIconColor.OSLO_GRAY}
                 styleType={EButtonStyleType.TRANSPARENT}
                 onClick={(): void => {
-                  carouselRef?.slickNext?.();
+                  if (!isDragging) carouselRef?.slickNext?.();
                 }}
               />
               <Button
