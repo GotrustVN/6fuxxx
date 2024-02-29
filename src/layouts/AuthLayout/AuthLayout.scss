@@ -1,6 +1,8 @@
 @import '@/assets/styles/_global.scss';
 
 .AuthLayout {
+  position: relative;
+
   &::before {
     @include fullAbsolute;
     content: '';

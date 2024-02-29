@@ -1,25 +1,25 @@
-import React, { useEffect, useState } from 'react';
 import { Col, Row } from 'antd';
-import Link from 'next/link';
-import Image from 'next/image';
 import classNames from 'classnames';
-import { useRouter } from 'next/router';
 import dynamic from 'next/dynamic';
+import Image from 'next/image';
+import Link from 'next/link';
+import { useRouter } from 'next/router';
+import React, { useEffect, useState } from 'react';
 
-import { Paths } from '@/routers/constants';
+import IconRankV from '@/assets/icons/icon-rank-v.svg';
+import ImageAvatar from '@/assets/images/image-avatar.png';
 import Logo from '@/assets/images/logo.svg';
-import { removeParam } from '@/utils/functions';
+import Avatar from '@/components/Avatar';
 import Button, { EButtonStyleType } from '@/components/Button';
 import Icon, { EIconColor, EIconName } from '@/components/Icon';
 import Input from '@/components/Input';
-import ImageAvatar from '@/assets/images/image-avatar.png';
-import IconRankV from '@/assets/icons/icon-rank-v.svg';
-import Avatar from '@/components/Avatar';
 import DrawerMenuMobile from '@/containers/Header/DrawerMenuMobile';
+import { Paths } from '@/routers/constants';
+import { removeParam } from '@/utils/functions';
 import { useModalState, useTrans } from '@/utils/hooks';
 
-import { THeaderProps } from './Header.types.d';
 import { dataHeaderChildPageMenu, dataHeaderMenu } from './Header.data';
+import { THeaderProps } from './Header.types.d';
 
 const MediaQuery = dynamic(() => import('react-responsive'), {
   ssr: false,
@@ -43,6 +43,7 @@ const Header: React.FC<THeaderProps> = ({ isLoggedDefault = false }) => {
   const detailPage = dataHeaderChildPageMenu(dataLocation).find((item) =>
     item.activePaths.includes(removeParam(asPath)),
   );
+
   const isAuthPage = ['login', 'sign-up'].includes(detailPage?.id as string);
   const isLoginPage = isAuthPage && (detailPage?.id as string) === 'login';
   const isSignUpPage = isAuthPage && (detailPage?.id as string) === 'sign-up';
@@ -192,7 +193,7 @@ const Header: React.FC<THeaderProps> = ({ isLoggedDefault = false }) => {
                         </>
                       )}
 
-                      {isSignUpPage && (
+                      {isSignUpPage ? (
                         <Button
                           title={trans?.header?.login}
                           styleType={EButtonStyleType.OUTLINE_RED}
@@ -201,7 +202,7 @@ const Header: React.FC<THeaderProps> = ({ isLoggedDefault = false }) => {
                           reverse
                           link={Paths.Login}
                         />
-                      )}
+                      ) : ''}
 
                       {isLoginPage && (
                         <Button

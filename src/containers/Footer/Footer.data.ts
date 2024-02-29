@@ -1,3 +1,5 @@
+import { Paths } from '@/routers/constants';
+
 export const dataFooterMenu = (data?: any) => [
   {
     id: 'become-an-influencer',
@@ -8,13 +10,13 @@ export const dataFooterMenu = (data?: any) => [
   {
     id: 'faq',
     title: data?.trans?.footer?.faq,
-    link: '',
+    link: Paths.Faq,
     activePaths: [],
   },
   {
     id: 'support',
     title: data?.trans?.footer?.support,
-    link: '',
+    link: Paths.Support,
     activePaths: [],
   },
 ];

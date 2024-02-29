@@ -183,6 +183,27 @@ export const dataFilterCategoryOptions = [
   },
 ];
 
+export const dataFaqOptions = [
+  {
+    key: '1',
+    title: 'What should I include in my profile to make a good impression?',
+    content: 'Focus on showcasing your personality, interests, and what you are looking for in a partner. Use clear and engaging language, highlight your hobbies and passions, and consider adding conversation starters to your profile. Be honest and authentic in your descriptions, as this will attract people who appreciate you for who you are.',
+  },
+  {
+    key: '2',
+    title: 'Is my profile information safe?',
+    content: 'We take your privacy seriously. Your personal information is protected by industry-standard security measures, and only essential details, like your username and profile picture, are visible to other users. You have complete control over what information you share and can choose to keep certain details private.',
+  },
+  {
+    key: '3',
+    title: 'What are some tips for staying safe while online dating?',
+    content: 'Never share personal information: This includes your address, phone number, or financial details.\
+    Meet in public for your first date: Choose a well-lit and populated place for your initial meeting.\
+    Trust your gut instinct: If something feels off about someone, don\'t hesitate to end the interaction.\
+    Report any inappropriate behavior: The website should have reporting mechanisms for harassment or suspicious activity.',
+  }
+];
+
 export const findChildrenOfOptions = (data: TMultipleCheckboxCollapseData): TMultipleCheckboxCollapseData[] => {
   const children: TMultipleCheckboxCollapseData[] = [];
 
